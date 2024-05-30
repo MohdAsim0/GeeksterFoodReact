@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#ffffff;
+  height: 4rem;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgb(210, 210, 210);
+  position: sticky;
+  top: 0;
+}
+
+.navbar .logo{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.navbar ul li .active-link{
+  color: blue;
+}
+
+.navbar ul li a:hover{
+  color: blue;
+  transition: color 300ms;
+  
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar .btn{
+  color: #fff;
+  background-color: blue;
+  border: none;
+  font-size: 19px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.navbar .btn:hover{
+  border: 2px solid blue;
+  background: transparent;
+  color:blue ;
+}
+
+/* Hero Section */
+/* https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80 */
+
+.hero{
+  background: url("https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+  );
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero .inner-hero{
+  width: 600px;
+  padding-top:8rem;
+  padding-left: 3rem;
+}
+
+.hero h1{
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero h1 strong{
+  color:rgb(195, 4, 55) ;
+}
+.hero p{
+  font-size: 20px ;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.hero-btns{
+  padding: 0;
+}
+
+.hero-btns a{
+  color: #fff;
+  background-color: rgb(232, 13, 72);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  border: transparent;
+  margin: 10px;;
+}
+
+.hero-btns a:hover{
+  cursor: pointer;
+  background-color: rgb(195, 4, 55);
+}
+
+/* Section-1 */
+.section-1-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem;
+}
+.section-1-left{
+  padding: 0 1rem;
+  width: 50%;
+  background-color: #fff;
+}
+.section-1-left img{
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.section-1-right{
+  background-color: #ededed;
+  padding: 2.3rem;
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10px;
+
+}
+.section-1-right h1 ,p, button{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.section-1-right button{
+  padding: 1rem;
+  background-color: rgb(71, 10, 254);
+  color: #fff;
+  border-radius: 5px;
+  border: transparent;
+  font-size: 16px;
+  height: 50px;
+}
+.section-1-right button:hover{
+  cursor: pointer;
+  transition: .2s ease;
+  color:  rgb(55, 6, 200);
+  background-color: #fff;
+  border: 2px solid  rgb(45, 2, 176);
+}
+
+/* testimonial */
+.testimonial-boxes-1 , .testimonial-boxes-2{
+  display: flex;
+  flex-wrap:wrap ;
+  gap: 2rem;
+
+}
+.testimonial-box{
+  padding: 2rem;
+  width: 30%;
+}
+.testimonial-detail{
+padding: 1.5rem;
+background-color: #ededed;
+border-radius: 10px;
+box-shadow: 2px 2px 5px rgb(210, 210, 210);
+}
+
+.testimonial-review {
+  margin-top: 2rem;
+  width: 50%;
+  align-items: center;
+  display: flex;
+}
+.review-img{
+  width: 30%;
+}
+.reviewer-name {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.review-img img{
+width: 80%;
+border-radius: 50%;
+}
+.reviewer-name h3{
+  font-size:14px;
+}
+.reviewer-name p{
+  font-size: 12px;
+}
+
+
+/* Footer */
+footer{
+  padding: 2rem;
+  text-align: center;
+
+}
+.footer-logo{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+.footer-logo img{
+  width: 40%;
+  text-align: center;
+}
+.footer-navlist{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.footer-navlist ul{
+  display: flex;
+ justify-content: space-between;
+}
+.icons{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  width:30%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer-icon{
+  min-width:60px;
+}
+.footer-icon img{
+  max-width: 40px;
+}
